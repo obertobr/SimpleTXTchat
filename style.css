@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(4, 3, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#geral {
+    background-color: rgb(71, 71, 71);
+    width: 99%;
+    height: 99%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#chat {
+    width: 98%;
+    height: inherit;
+    margin: 1%;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+}
+
+#baixo {
+    width: 98%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#baixo > input {
+    color: white;
+    background-color: rgb(24, 24, 24);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#msg {
+    width: inherit;
+}
+
+#enviar {
+    width: 19%;
+    cursor: pointer;
+}
+
+#lateral {
+    position: fixed;
+    height: 98%;
+    width: 400px;
+    backdrop-filter:blur(10px) brightness(10%);
+    right: 1%;
+    border-radius: 20px;
+    padding: 0px 30px;
+}
+
+#lateral p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#nome {
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    border: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+.online {   
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 0.8em;
+}
+
+.seta {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+}
+
+.seta:hover {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#seta {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+#setinha {
+    transform: scaleX(-1);
+}
+
+#horario{
+    float: right;
+    margin-right: 10px;
+}
+
+#msge{
+    margin-left: 18px;
+}
+
+#rainbow {
+    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+}
+
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
